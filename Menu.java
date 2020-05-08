@@ -12,6 +12,7 @@ public class Menu {
         System.out.println("Add new item: [name]");
         System.out.println("Delete item: [name]");
         System.out.println("View: [name]");
+        System.out.println("ViewAll");
         System.out.println("Quit");
 
         String input = sc.nextLine();
