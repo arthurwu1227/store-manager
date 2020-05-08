@@ -8,6 +8,7 @@ public class Main{
         String[] in;
         ArrayList<String> items = new ArrayList<>();
         ArrayList<Double> itemsPrice = new ArrayList<>();
+        ArrayList<Integer> itemsAmount = new ArrayList<>();
 
         while(true) {
             //call static method callMenu from class Menu
@@ -16,8 +17,6 @@ public class Main{
             if (input.equals("quit")) {
                 break;
             }
-
-
             //splits command
             in = input.split(":");
 
@@ -29,13 +28,16 @@ public class Main{
             //switch statement to determine proper course of action given command
             switch (in[0]) {
                 case "add new item":
-                    interpret.NewItem(in, items, itemsPrice);
+                    interpret.NewItem(in, items, itemsPrice, itemsAmount);
                     break;
                 case "delete item":
-                    interpret.DeleteItem(in, items, itemsPrice);
+                    interpret.DeleteItem(in, items, itemsPrice, itemsAmount);
                     break;
                 case "view":
-                    interpret.View(in, items, itemsPrice);
+                    interpret.View(in, items, itemsPrice, itemsAmount);
+                    break;
+                case "viewall":
+                    interpret.ViewAll(items, itemsPrice, itemsAmount);
                     break;
                 default:
                     System.out.println("Not in menu");
