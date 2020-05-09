@@ -14,7 +14,7 @@ public class interpretInput {
         System.out.println("The price of item " + in[1] + " is set to " + price);
         System.out.println("Please set the amount of the item.");
         int amount = sc.nextInt();
-        System.out.println("The amount of item " + in[1] + "is set to " + amount);
+        System.out.println("The amount of item " + in[1] + " is set to " + amount);
         items.add(in[1]);
         itemsPrice.add(price);
         itemsAmount.add(amount);
@@ -39,7 +39,7 @@ public class interpretInput {
         for (int i = 0; i < items.size(); i++) {
             System.out.println(items.get(i) + ", price of");
             System.out.print(itemsPrice.get(i) + ", stocked at ");
-            System.out.println(itemsAmount.get(i) + "units");
+            System.out.println(itemsAmount.get(i) + " units");
 
         }
     }
