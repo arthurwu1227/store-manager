@@ -3,7 +3,8 @@ package com.company;
 import java.util.Scanner;
 
 public class Menu {
-    // I made this method static because the code is simple and there is only a single method in the class
+    // I made this method static because the code is simple and there is only a single method in the class. I might add new
+    //classes to menu in the future, but there is only this single method in the menu for now.
     public static String callMenu(){
         //this method asks the user for a course of action and returns the input
         Scanner sc = new Scanner(System.in);
